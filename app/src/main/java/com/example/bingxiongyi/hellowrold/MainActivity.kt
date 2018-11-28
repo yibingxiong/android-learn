@@ -14,20 +14,6 @@ class MainActivity : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        // 获取LinearLayout布局容器
-        val main = findViewById<LinearLayout>(R.id.root)
-        // 程序创建ImageView组件
-        val image = ImageView(this)
-        image.layoutParams = ViewGroup.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT,ViewGroup.LayoutParams.WRAP_CONTENT)
-        // 将ImageView组件添加到LinearLayout布局容器中
-        main.addView(image)
-        // 初始化时显示第一张图片
-        image.setImageResource(images[0])
-
-        val draw = DrawView(this)
-        draw.minimumWidth = 300
-        draw.minimumHeight = 500
-        main.addView(draw)
     }
 
 }
