@@ -1,51 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?><!-- 定义一个线性布局容器 -->
-<RelativeLayout
-        android:layout_height="match_parent"
-        android:layout_width="match_parent"
-        xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView
-            android:id="@+id/view1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="#ccc"
-            android:layout_centerInParent="true"
-            android:text="1"
-    />
-    <TextView
-            android:id="@+id/view2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="#ccc"
-            android:layout_above="@id/view1"
-            android:layout_alignLeft="@id/view1"
-            android:text="2"
-    />
-    <TextView
-            android:id="@+id/view3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="#ccc"
-            android:layout_below="@id/view1"
-            android:layout_alignLeft="@id/view1"
-            android:text="3"
-    />
-    <TextView
-            android:id="@+id/view4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="#ccc"
-            android:layout_toLeftOf="@id/view1"
-            android:layout_alignTop="@id/view1"
-            android:text="4"
-    />
-    <TextView
-            android:id="@+id/view5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="#ccc"
-            android:layout_toRightOf="@id/view1"
-            android:layout_alignTop="@id/view1"
-            android:text="5"
-    />
 
-</RelativeLayout>
+<GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:rowCount="6"
+        android:columnCount="4"
+        android:id="@+id/root"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="4"
+        android:textSize="50sp"
+        android:layout_marginLeft="2pt"
+        android:layout_marginRight="2pt"
+        android:padding="3pt"
+        android:layout_gravity="right"
+        android:background="#eee"
+        android:textColor="#000"
+        android:text="0"
+    />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="4"
+        android:text="清除"
+    />
+</GridLayout>
