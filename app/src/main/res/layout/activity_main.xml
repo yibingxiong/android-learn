@@ -7,20 +7,85 @@
               android:orientation="vertical"
               android:gravity="center_vertical|center_horizontal"
               tools:context=".MainActivity">
-    <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
-            android:text="按钮1"
-
-    />
-    <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
-            android:text="按钮1"
-
-    />
-    <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
-            android:text="按钮1"
-
-    />
-    <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
-            android:text="按钮1"
-
-    />
+    <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:shrinkColumns="1"
+            android:stretchColumns="2"
+    >
+        <Button
+            android:text="独自一行的按钮"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        />
+        <TableRow>
+            <Button
+                    android:text="普通按钮"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+            />
+            <Button
+                    android:text="收缩的按钮"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+            />
+            <Button
+                    android:text="拉升的按钮"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+            />
+        </TableRow>
+    </TableLayout>
+    <TableLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:collapseColumns="1"
+    >
+        <Button
+                android:text="独自一行的按钮"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+        />
+        <TableRow>
+            <Button
+                    android:text="普通按钮"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+            />
+            <Button
+                    android:text="应该没有我吧"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+            />
+            <Button
+                    android:text="拉升的按钮"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+            />
+        </TableRow>
+    </TableLayout>
+    <TableLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:stretchColumns="1,2"
+    >
+        <Button
+                android:text="独自一行的按钮"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+        />
+        <TableRow>
+            <Button
+                    android:text="普通按钮"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+            />
+            <Button
+                    android:text="被拉升的按钮"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+            />
+            <Button
+                    android:text="被拉伸的按钮"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+            />
+        </TableRow>
+    </TableLayout>
 </LinearLayout>
