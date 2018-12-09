@@ -3,11 +3,8 @@ package com.example.bingxiongyi.hellowrold
 import android.app.Activity
 import android.os.Bundle
 import android.view.Gravity
-import android.view.ViewGroup
 import android.widget.Button
 import android.widget.GridLayout
-import android.widget.ImageView
-import android.widget.LinearLayout
 
 class MainActivity : Activity() {
 
