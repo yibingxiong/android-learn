@@ -1,55 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?><!-- 定义一个线性布局容器 -->
-<FrameLayout
+<RelativeLayout
         android:layout_height="match_parent"
         android:layout_width="match_parent"
-        xmlns:android="http://schemas.android.com/apk/res/android"
->
+        xmlns:android="http://schemas.android.com/apk/res/android">
     <TextView
+            android:id="@+id/view1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:width="320pt"
-            android:height="320pt"
-            android:background="#f00"
-            android:layout_gravity="center"
+            android:background="#ccc"
+            android:layout_centerInParent="true"
+            android:text="1"
     />
     <TextView
+            android:id="@+id/view2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:width="280pt"
-            android:height="280pt"
-            android:background="#0f0"
-            android:layout_gravity="center"
+            android:background="#ccc"
+            android:layout_above="@id/view1"
+            android:layout_alignLeft="@id/view1"
+            android:text="2"
     />
     <TextView
+            android:id="@+id/view3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:width="240pt"
-            android:height="240pt"
-            android:layout_gravity="center"
-            android:background="#00f"
+            android:background="#ccc"
+            android:layout_below="@id/view1"
+            android:layout_alignLeft="@id/view1"
+            android:text="3"
     />
     <TextView
+            android:id="@+id/view4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:width="200pt"
-            android:height="200pt"
-            android:background="#ff0"
-            android:layout_gravity="center"
+            android:background="#ccc"
+            android:layout_toLeftOf="@id/view1"
+            android:layout_alignTop="@id/view1"
+            android:text="4"
     />
     <TextView
+            android:id="@+id/view5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:width="160pt"
-            android:height="160pt"
-            android:background="#f0f"
-            android:layout_gravity="center"
+            android:background="#ccc"
+            android:layout_toRightOf="@id/view1"
+            android:layout_alignTop="@id/view1"
+            android:text="5"
     />
-    <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:width="120pt"
-            android:height="120pt"
-            android:background="#0ff"
-            android:layout_gravity="center"
-    />
-</FrameLayout>
+
+</RelativeLayout>
